@@ -24,7 +24,7 @@ jobs:
 
     - name: Archive Test Reports
       if: always()
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v2.3.0   # <-- fixed to a specific version
       with:
         name: junit-test-results
         path: target/surefire-reports/
